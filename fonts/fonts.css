@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Goologolo";
+    src: url("../fonts/GoogleSans-Bold.ttf");
+    font-weight: 600px;
+    font-style: normal;
+}
+.section h3{
+    font-family:'Goologolo';
+    color: black;
+    font-weight: 100px;
+    font-size: 17px;
+    text-decoration: none;
+}

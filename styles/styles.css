@@ -1,0 +1,51 @@
+.celect {
+    font-family: "Goologolo";
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+ 
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.ull{
+    display: flex; 
+    list-style: none;
+}
+.lit{
+    width: 210px;
+    height: 50px;
+    list-style: none;
+}
+
+.btn-group button {
+  width: 400px;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+
+.bordered-button {
+    font-family: "Goologolo";
+    font-size: 20px;
+    height: 50px;
+    font-weight: 100;
+    background-color: white;
+    color: black;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header{
+    width: 10;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ggg{
+    height: 10px;
+}
