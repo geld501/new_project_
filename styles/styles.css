@@ -1,5 +1,5 @@
 .celect {
-    font-family: "Goologolo";
+    font-family: "Goologolo", Arial, Helvetica, sans-serif;
     color: black;
     font-size: 15px;
     text-decoration: none;
@@ -18,17 +18,18 @@
     width: 210px;
     height: 50px;
     list-style: none;
+    text-decoration: none;
 }
 
 .btn-group button {
-  width: 400px;
-  padding: 10px 24px;
-  cursor: pointer;
-  float: left;
+    width: 400px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
 }
 
 .bordered-button {
-    font-family: "Goologolo";
+    font-family: "Goologolo", Arial, Helvetica, sans-serif;
     font-size: 20px;
     height: 50px;
     font-weight: 100;
@@ -48,4 +49,29 @@ header{
 }
 .ggg{
     height: 10px;
+}
+
+.section .text1_best_dist {
+    font-family: "Goologolo", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #DF6951;
+}
+
+.text2_best_life {
+    font-family: "Volkhov", Arial, Helvetica, sans-serif;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -4%;
+}
+
+.text3_bred {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5E6282;
+}
+
+.div1 {
+    height: 535px;
+    width: 630px;
 }
