@@ -17,6 +17,7 @@
 @font-face {
     font-family: "Poppins-Medium";
     src: url("../fonts/Poppins-Medium.ttf");
+
 }
 
 @font-face {
@@ -29,11 +30,3 @@
     src: url("../fonts/Poppins-Regular.ttf");
 }
 
-
-.section h3{
-    font-family: "Google-Sans-Bold", Arial, Helvetica, sans-serif;
-    color: black;
-    font-weight: 100px;
-    font-size: 17px;
-    text-decoration: none;
-}
