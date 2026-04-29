@@ -178,7 +178,8 @@
 
     .text3_bred {
         height: 90;
-        font-family: "Poppins-Medium", Arial, Helvetica, sans-serif;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 500;
         font-size: 16px;
         line-height: 30px;
         color: #5E6282;
@@ -211,7 +212,8 @@
     }
 
     .category-plane p {
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         text-align: center;
         font-size: 16px;
         line-height: 26px;
@@ -232,7 +234,8 @@
     }
 
     .category p {
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         text-align: center;
         font-size: 16px;
         line-height: 26px;
@@ -244,7 +247,8 @@
     }
 
     .text4-CATEGORY {
-        font-family: "Poppins-Semi-Bold";
+        font-family: "Poppins";
+        font-weight: 600;
         font-size: 18px;
         color: #5E6282;
     }
@@ -279,7 +283,8 @@
     }
 
     .div4 p{
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 16px;
         align-items: center;
     }
@@ -309,7 +314,8 @@
     }
 
     .over p {
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 16px;
         line-height: 0%;
         letter-spacing: 0%;
@@ -364,7 +370,8 @@
     }
 
     .chose h1 {
-        font-family: "Poppins-Semi-Bold";
+        font-family: "Poppins";
+        font-weight: 600;
         font-size: 16px;
         line-height: 124,5%;
         letter-spacing: 0%;
@@ -372,7 +379,7 @@
     }
 
     .chose p {
-        font-family: "Poppins-Regular";
+        font-family: "Poppins";
         font-size: 16px;
         line-height: 124%;
         letter-spacing: 0%;
@@ -380,7 +387,8 @@
     }
 
     .img_easy p {
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 18px;
         line-height: 124,5%;
         letter-spacing: -0,5%;
@@ -430,7 +438,8 @@
         width: 402px;
         height: 96px;
 
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 16px;
         line-height: 32px;
         letter-spacing: 0%;
@@ -448,7 +457,8 @@
         width: 402px;
         height: 96px;
 
-        font-family: "Poppins-Semi-Bold";
+        font-family: "Poppins";
+        font-weight: 600;
         font-size: 18px;
         letter-spacing: 0%;
         color: #14183E;
@@ -465,7 +475,8 @@
         width: 402px;
         height: 96px;
 
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 14px;
         letter-spacing: 0%;
         color: #5E6282;
@@ -499,7 +510,8 @@
         width: 859px;
         height: 108px;
 
-        font-family: "Poppins-Semi-Bold";
+        font-family: "Poppins";
+        font-weight: 600;
         font-size: 33px;
         line-height: 54px;
         text-align: center;
@@ -512,7 +524,8 @@
         left: 400px;
         width: 300px;
 
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 14px;
         color: #39425D;
     }
@@ -560,13 +573,15 @@
     }
 
     .logo-ty {
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 44;
         color: #181E4B;
     }
 
     .book {
-        font-family: "Poppins-Medium";
+        font-family: "Poppins";
+        font-weight: 500;
         font-size: 13;
         color: #5E6282;
         line-height: 125%;
@@ -576,7 +591,8 @@
     }
 
     .about {
-        font-family: "Poppins-Semi-Bold";
+        font-family: "Poppins";
+        font-weight: 600;
         font-size: 18px;
         letter-spacing: 125%;
         color: #5E6282;
@@ -585,6 +601,7 @@
 
     .discover p {
         font-family: "Poppins";
+        font-weight: 500;
         font-size: 20px;
         letter-spacing: 125%;
         color: #5E6282;

@@ -1,32 +1,33 @@
 @font-face {
     font-family: "Google-Sans-Bold";
-    src: url("../fonts/GoogleSans-Bold.ttf");
+    src: url("../fonts/GoogleSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Google-Sans-Medium";
-    src: url("../fonts/GoogleSans-Medium.ttf");
+    src: url("../fonts/GoogleSans-Medium.ttf") format("truetype");
 }
-
 
 @font-face {
     font-family: "Volkhov";
-    src: url("../fonts/Volkhov-Bold.ttf");
+    src: url("../fonts/Volkhov-Bold.ttf") format("truetype");
+    font-weight: bold; /* Так как Volkhov-Bold предполагает жирное начертание */
 }
 
 @font-face {
-    font-family: "Poppins-Medium";
-    src: url("../fonts/Poppins-Medium.ttf");
-
+    font-family: "Poppins"; 
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
 }
 
 @font-face {
-    font-family: "Poppins-Semi-Bold";
-    src: url("../fonts/Poppins-SemiBold.ttf");
+    font-family: "Poppins"; 
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600; 
 }
 
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("../fonts/Poppins-Regular.ttf");
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
 }
-
