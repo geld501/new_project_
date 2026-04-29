@@ -553,3 +553,52 @@
         transform: scale(0.98);
     }
 
+
+    /*ПОДВАЛ*/
+    .podval-col {
+        display: flex;
+    }
+
+    .logo-ty {
+        font-family: "Poppins-Medium";
+        font-size: 44;
+        color: #181E4B;
+    }
+
+    .book {
+        font-family: "Poppins-Medium";
+        font-size: 13;
+        color: #5E6282;
+        line-height: 125%;
+
+
+        width: 207px;
+    }
+
+    .about {
+        font-family: "Poppins-Semi-Bold";
+        font-size: 18px;
+        letter-spacing: 125%;
+        color: #5E6282;
+        text-decoration: none;
+    }
+
+    .discover p {
+        font-family: "Poppins";
+        font-size: 20px;
+        letter-spacing: 125%;
+        color: #5E6282;
+        letter-spacing: 1%;
+    }
+
+    .priloj {
+        display: flex;
+        gap: 100px;
+    }
+
+    .priloj img {
+        width: 41px;
+        height: 41px;
+    }
+
+    
