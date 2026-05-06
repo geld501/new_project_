@@ -1,4 +1,4 @@
-    header{
+    header {
         width: 10;
         height: 150px;
         display: flex;
@@ -6,13 +6,23 @@
         justify-content: center;
     }
 
+    body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
     /*верхушка*/
     .section {
         position: relative;
-        width: 1160,58px;
+        width: 1160px;
         height: 40px;
         display: flex;
         align-items: center;
+        align-content: center;
+        margin: 10%;
     }
 
     .section h3{
@@ -26,7 +36,8 @@
     .decor {
         position: absolute;
         top: -100px;
-        left: 100%;
+        left: 50%;
+        z-index: -1;
     }
 
     .celect {
@@ -71,10 +82,17 @@
 
 
     /*traveller*/
-    .traveller {
-        position: relative;
-        display: grid;
+    .traveller-sect {
+        align-content: center;
+        align-self: center;
+        justify-self: center;
+        height: 764px;
         width: 1200px;
+    }
+
+    .traveller {
+        display: flex;
+        width: 1400px;
     }
 
     .div1 {
@@ -144,8 +162,7 @@
     }
 
     .div2 {
-        position: absolute;
-        left: 400px;
+        position: relative;
     }
 
     .plane1 {
@@ -158,6 +175,14 @@
         position: absolute;
         top: 90px;
         left: 650px;
+        z-index: -1;
+    }
+
+    .decore {
+        position: absolute;
+        top: 170px;
+        left: -290px;
+        z-index: -1;
     }
 
     .text1_best_dist {
@@ -169,7 +194,6 @@
     }
 
     .text2_best_life {
-        height: 267px;
         font-family: "Volkhov", Arial, Helvetica, sans-serif;
         font-size: 84px;
         line-height: 89px;
@@ -177,7 +201,6 @@
     }
 
     .text3_bred {
-        height: 90;
         font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -190,17 +213,33 @@
     /*services*/    
     .services {
         width: 1228px;
-        height: 525px;
+        
+        justify-self: center;
     }
 
     .services-head {
         display: grid;
+        gap: 0;
+        
+        background-image: url("..images/plusiki.png");
+        background-color: #14183e13;
+        background-position:  10%, 10%;
     }
 
     .div3 {
         text-align: center;
         display: flex;
-        align-items: center;
+        gap: 100px;
+        align-content: center;
+        justify-content: center;
+        width: 1228px;
+        padding-bottom: 100px;
+    }
+
+    .div3 img {
+        left: 100%;
+        width: 153px;
+        height: 166px;
     }
 
     .category-plane {
@@ -208,7 +247,6 @@
         text-align: center;
         display: grid;
         width: 190px;
-        height: 227px;
     }
 
     .category-plane p {
@@ -230,7 +268,6 @@
         display: grid;
         gap: 10px;
         width: 190px;
-        height: 227px;
     }
 
     .category p {
@@ -251,15 +288,21 @@
         font-weight: 600;
         font-size: 18px;
         color: #5E6282;
+        margin: 0;
+        
     }
 
     .text5-we-offer-best {
         font-family: "Volkhov";
         font-size: 50px;
         color: #14183E;
+        margin: 0;
     }
 
-    .top_selling {
+    .top_sellingg {
+        justify-self: center;
+        align-items: center;
+        display: grid;
         width: 1600px;
         height: 617px;
     }
@@ -353,6 +396,12 @@
         height: 252px;
     }
 
+
+
+    .easy-a {
+        justify-self: center;
+    }
+
     .easy_and_fast {
         display: flex;
         width: 1114px;
@@ -399,6 +448,7 @@
         display: flex;
         width: 1165px;
         height: 356px;
+        justify-self: center;
     }
 
     .dialog-card1 {
@@ -435,9 +485,6 @@
         bottom: 0px;
         display: flex;
 
-        width: 402px;
-        height: 96px;
-
         font-family: "Poppins";
         font-weight: 500;
         font-size: 16px;
@@ -454,9 +501,6 @@
         bottom: 0px;
         display: flex;
 
-        width: 402px;
-        height: 96px;
-
         font-family: "Poppins";
         font-weight: 600;
         font-size: 18px;
@@ -471,9 +515,6 @@
         right: 0;
         bottom: 0px;
         display: flex;
-
-        width: 402px;
-        height: 96px;
 
         font-family: "Poppins";
         font-weight: 500;
@@ -501,6 +542,7 @@
         position: relative;
         width: 1356pt;
         height: 490pt;
+        justify-self: center;
     }
 
     .subscribe-section p{
@@ -570,6 +612,7 @@
     /*ПОДВАЛ*/
     .podval-col {
         display: flex;
+        justify-self: center;
     }
 
     .logo-ty {
@@ -617,5 +660,3 @@
         width: 41px;
         height: 41px;
     }
-
-    
