@@ -1,6 +1,6 @@
     header {
         width: 10;
-        height: 150px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -15,29 +15,45 @@
     }
 
     /*верхушка*/
-    .section {
+    .section-head {
         position: relative;
-        width: 1160px;
-        height: 40px;
+        width: 1200px;
         display: flex;
         align-items: center;
         align-content: center;
+        justify-self: center;
         margin: 10%;
     }
 
-    .section h3{
-        font-family: "Google-Sans-Bold", Arial, Helvetica, sans-serif;
-        color: black;
-        font-weight: 100px;
-        font-size: 17px;
-        text-decoration: none;
+    .logo-and-buttons {
+        display: flex;
+        gap: 200px  ;
     }
 
     .decor {
         position: absolute;
         top: -100px;
-        left: 50%;
+        left: 60%;
         z-index: -1;
+    }
+    
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .ull{
+        display: flex; 
+        list-style: none;
+        gap: 100px;
+        margin: 0;
+    }
+
+    .lit{
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
     }
 
     .celect {
@@ -46,33 +62,40 @@
         font-size: 15px;
         text-decoration: none;
     }
-    
-    .nav{
-        display: flex;
-        align-items: center;
-    }
-
-    .ull{
-        display: flex; 
-        list-style: none;
-    }
-    .lit{
-        width: 210px;
-        height: 50px;
-        list-style: none;
-        text-decoration: none;
-    }
 
     .bordered-button-enter {
         font-family: "Google-Sans-Bold", Arial, Helvetica, sans-serif;
         font-size: 20px;
+        width: 120px;
         height: 50px;
         font-weight: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         color: black;
         border: 2px solid #333;
         padding: 10px 20px;
         border-radius: 5px;
+    }
+
+    .bordered-button-enter:hover {
+        background-image: linear-gradient(to right, #FFAA00, #FFC30B);
+    }
+
+    .bordered-button-enter:active {
+        background-image: linear-gradient(to right, #FFAA00, #FFC30B);
+        transform: scale(0.98);
+    }
+
+    .language {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .language h3 {
+        font-family: "Google-Sans", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        color: #212832;
     }
 
     .ggg{
@@ -97,7 +120,42 @@
 
     .div1 {
         top: 100px;
-        width: 535px;
+        width: 600px;
+    }
+    
+    .text1_best_dist {
+        height: 0px;
+        line-height: 0px;
+        font-family: "Google-Sans-Bold", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #DF6951;
+
+        margin-top: 130px;
+    }
+
+    .text2_best_life {
+        font-family: "Volkhov", Arial, Helvetica, sans-serif;
+        font-size: 84px;
+        line-height: 89px;
+        letter-spacing: -4%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .text3_bred {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        width: 457px;
+        color: #5E6282;
+
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        display: flex;
+        align-items: center;
     }
 
     .desc {
@@ -106,7 +164,7 @@
     }
 
     .bordered-button-find-out-more {
-        width: 170px;
+        width: 170pt;
         height: 60px;
         font-family: "Google-Sans-Medium", Arial, Helvetica, sans-serif;
         font-size: 18px;
@@ -133,7 +191,7 @@
     }
 
     .play {
-        width: 52px;
+        width: 52pt;
         height: 52px;
         background-color: #DF6951;
         border: none;
@@ -163,51 +221,31 @@
 
     .div2 {
         position: relative;
+        width: 784px;
+        height: 764px;
+        background-image: url(../images/Traveller1.png);
+        background-position: -50px;
     }
 
     .plane1 {
         position: absolute;
         top: 50px;
-        left: 140px;
+        left: 80px;
     }
 
     .plane2 {
         position: absolute;
         top: 90px;
-        left: 650px;
+        left: 580px;
         z-index: -1;
     }
 
     .decore {
         position: absolute;
-        top: 170px;
-        left: -290px;
+        top: 250px;
+        left: -350px;
         z-index: -1;
     }
-
-    .text1_best_dist {
-        height: 0px;
-        line-height: 0px;
-        font-family: "Google-Sans-Bold", Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        color: #DF6951;
-    }
-
-    .text2_best_life {
-        font-family: "Volkhov", Arial, Helvetica, sans-serif;
-        font-size: 84px;
-        line-height: 89px;
-        letter-spacing: -4%;
-    }
-
-    .text3_bred {
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
-        color: #5E6282;
-    }
-    
 
 
     /*services*/    
@@ -215,15 +253,7 @@
         width: 1228px;
         
         justify-self: center;
-    }
-
-    .services-head {
-        display: grid;
-        gap: 0;
-        
-        background-image: url("..images/plusiki.png");
-        background-color: #14183e13;
-        background-position:  10%, 10%;
+        margin-top: 100px;
     }
 
     .div3 {
@@ -242,122 +272,155 @@
         height: 166px;
     }
 
-    .category-plane {
-        align-items: center;
-        text-align: center;
+    .services-head {
         display: grid;
-        width: 190px;
+        gap: 0;
+        
+        background-image: url("..images/plusiki.png");
+        background-position:  10%, 10%;
     }
-
-    .category-plane p {
-        font-family: "Poppins";
-        font-weight: 500;
-        text-align: center;
-        font-size: 16px;
-        line-height: 26px;
+    
+    .text4-CATEGORY {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
         color: #5E6282;
+        margin-top: 150px;
+        
     }
 
-    .category-plane img {
-        height: 160px;
+    .text5-we-offer-best {
+        font-family: "Volkhov", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #14183E;
+        margin: 0;
+    }
+    
+    .div4 {
+        position: relative;
+        justify-content: center;
+        gap: 60px;
+        display: flex;
+        align-items: center;
     }
 
+    .div4 h1{
+        font-family: "Google-Sans-Bold", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .div4 p{
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .rectangle {
+        position: absolute;
+        top: 250px;
+        left: 270px;
+        z-index: -1;
+    }
+    
     .category {
         align-items: center;
+        justify-items: center;
         text-align: center;
         display: grid;
         gap: 10px;
-        width: 190px;
+        
+        width: 267px;
+        height: 314px;
     }
 
     .category p {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         text-align: center;
         font-size: 16px;
         line-height: 26px;
         color: #5E6282;
+        width: 181px;
     }
 
     .category img {
         height:  60px;
     }
 
-    .text4-CATEGORY {
-        font-family: "Poppins";
-        font-weight: 600;
-        font-size: 18px;
-        color: #5E6282;
-        margin: 0;
-        
-    }
-
-    .text5-we-offer-best {
-        font-family: "Volkhov";
-        font-size: 50px;
-        color: #14183E;
-        margin: 0;
-    }
-
-    .top_sellingg {
-        justify-self: center;
+    .category-plane {
         align-items: center;
+        justify-items: center;
+        text-align: center;
         display: grid;
-        width: 1600px;
-        height: 617px;
+        gap: 10px;
+        width: 267px;
+        height: 314px;
+
+        background-color: white;
+        border-radius: 36px;
+
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.072);
     }
 
-    .desc {
-        display: flex;
-        align-items: center;
-    }
-
-    .div4 {
-        justify-content: center;
-        gap: 100px;
-        display: flex;
-        align-items: center;
-    }
-
-    .div4 h1{
-        font-family: "Google-Sans-Bold";
-        font-size: 20px;
-        align-self: center;
-    }
-
-    .div4 p{
-        font-family: "Poppins";
+    .category-plane p {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        width: 181px;
         font-weight: 500;
+        text-align: center;
         font-size: 16px;
-        align-items: center;
+        line-height: 26px;
+        color: #5E6282;
     }
 
-    .card {
-        width: 315px;
-        height: 457px;
+    .img-plane {
         position: relative;
+        height: 60px;
     }
 
-    .card img {
-        width: 315px;
-        height: 457px;
-        display: block;
-        height: auto;
+    .pl {
+        position: absolute;
+        top: -40px;
+        left: -50px;
+
+        height: 132px;
+        width: 132px;
+    }
+    
+
+    /*TOP SELLING*/
+    .top_sellingg {
+        display: grid;
+        justify-self: center;
+        width: 1200px;
+    }
+
+    .cards {
+        height: 458px;
+        justify-self: center;
+        justify-content: center;
+        gap: 70px;
+        position: relative;
+        display: flex;
+        width: 1102px;
     }
 
     .over {
         position:absolute;
-        top: 90px;
-        left: 65px;
+        top: 320px;
+        left: 20px;
         right: 0;
         bottom: 20px;
         display: flex;
+        gap: 10px;
         flex-direction: column;
         justify-content:center;
     }
 
     .over p {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 0%;
@@ -370,7 +433,7 @@
         top: 10px;
         right: 10px;
     }
-
+    
     .first-text-card {
         display: flex;
         gap: 40px;
@@ -387,56 +450,101 @@
         height: 20px;
     }
 
-    .cards {
-        display: flex;
+    .card1 {
+        width: 315px;
+        background-image: url(../images/Rome_card.png);
+        position: relative;
+
+        border-radius: 24px;
+        
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
+    }
+
+    .card2 {
+        width: 315px;
+        background-image: url(../images/London_card.png);
+        position: relative;
+
+        border-radius: 24px;
+        
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
+    }
+
+    .card3 {
+        width: 315px;
+        background-image: url(../images/Last_card.png);
+        position: relative;
+
+        border-radius: 24px;
+        
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
     }
 
     .zigzag {
-        width: 96px;
-        height: 252px;
+        position: absolute;
+        z-index: -1;
+        top: 140px;
+        left: 1010px;
     }
 
 
 
-    .easy-a {
+    /*EASY_A*/
+    .section-easy-a {
         justify-self: center;
+        width: 1174px;
     }
 
     .easy_and_fast {
         display: flex;
-        width: 1114px;
+        
+    }
+
+    .div5 {
+        display: grid;
+        align-content: center;
+        gap: 30px;
     }
 
     .chose {
         display: flex;
         align-items: center;
-        column-gap: 10px;
+        column-gap: 20px;
+        width: 395px;
     }
 
     .chose img {
         width: 47px;
         height: 48px;
+        margin-bottom: 20px;
     }
 
     .chose h1 {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 16px;
         line-height: 124,5%;
         letter-spacing: 0%;
+        margin-top: 0;
+        margin-bottom: 0;
         color: #5E6282;
     }
 
     .chose p {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-size: 16px;
         line-height: 124%;
         letter-spacing: 0%;
+        margin-top: 0;
+        margin-bottom: 0;
         color: #5E6282;
     }
 
     .img_easy p {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 124,5%;
@@ -444,18 +552,63 @@
         color: #84829A;
     }
 
+
+    /*TESTIMONIALS*/
+    .section-testimonials {
+        justify-self: center;
+        width: 1200px;
+    }
+
     .testimonials {
         display: flex;
         width: 1165px;
         height: 356px;
         justify-self: center;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .div6 {
+        display: flex;
+        align-content: center;
+        gap: 30px;
+    }
+
+    .text9 {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #5E6282;
+        margin-bottom: 0;
+    }
+
+    .text10 {
+        font-family: "Volkhov", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #14183E;
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+
+    .points {
+        display: flex;
+        height: 12px;
+        width: 12px;
+        gap: 25px;
+    }
+
+    .dialog-cards {
+        position: relative;
+        width: 669pt;
+        height: 356pt;
     }
 
     .dialog-card1 {
         position: absolute;
-        width: 541pt;
+        width: 400pt;
         height: 279pt;
-        top: 180px;
+        top: 80px;
         left: 50px;
         right: 0;
         bottom: 0px;
@@ -463,18 +616,10 @@
 
     .dialog-card2 {
         position: absolute;
-        width: 541pt;
+        width: 400pt;
         height: 279pt;
-        top: 100px;
         left: 0;
         right: 0;
-        bottom: 0px;
-    }
-
-    .dialog-cards {
-        position: relative;
-        width: 669pt;
-        height: 356pt;
     }
 
     .text6{
@@ -485,7 +630,7 @@
         bottom: 0px;
         display: flex;
 
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
@@ -501,7 +646,7 @@
         bottom: 0px;
         display: flex;
 
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 18px;
         letter-spacing: 0%;
@@ -516,7 +661,7 @@
         bottom: 0px;
         display: flex;
 
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0%;
@@ -527,32 +672,29 @@
         position: absolute;
         display: grid;
         gap: 50px;
-        top: 225px;
-        left: 700px;
+        top: 155px;
+        left: 800px;
 
     }
 
-    .points {
-        display: flex;
-        gap: 25px;
-    }
+
 
     /*subscribe-section*/
     .subscribe-section {
         position: relative;
-        width: 1356pt;
-        height: 490pt;
+        width: 1200px;
+        height: 407px;
         justify-self: center;
     }
 
     .subscribe-section p{
         position: absolute;
         top: 60px;
-        left: 240px;
+        left: 150px;
         width: 859px;
         height: 108px;
 
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 33px;
         line-height: 54px;
@@ -560,13 +702,23 @@
         color: #5E6282;
     }
 
+    .subscribe-section img{
+        position: absolute;
+        top: 0px;
+        left: -100px;
+        width: 0px;
+        height: 0px;
+        width: 1400px;
+        height: 500px;
+    }
+
     .inp {
         position: absolute;
-        top: 295px;
-        left: 400px;
+        top: 300px;
+        left: 330px;
         width: 300px;
 
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 14px;
         color: #39425D;
@@ -576,7 +728,7 @@
     .custom-button {
         position: absolute;
         top: 275px;
-        left: 780px;
+        left: 700px;
         width: 180px;
         height: 68px;
         padding: 0;
@@ -588,7 +740,7 @@
         color: #FFFFFF;
         letter-spacing: 1px;
         font-size: 17px;
-        font-family: "Google-Sans-Medium";
+        font-family: "Google-Sans-Medium", Arial, Helvetica, sans-serif;
         
         display: flex;
         justify-content: center;
@@ -613,19 +765,31 @@
     .podval-col {
         display: flex;
         justify-self: center;
+        gap: 450px;
+        margin-top: 200px;
     }
 
     .logo-ty {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
-        font-size: 44;
+        font-size: 44px;
         color: #181E4B;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .company {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 21px;
+        color: black;
+        margin-block-end: 26px;
     }
 
     .book {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
-        font-size: 13;
+        font-size: 13px;
         color: #5E6282;
         line-height: 125%;
 
@@ -634,29 +798,35 @@
     }
 
     .about {
-        font-family: "Poppins";
-        font-weight: 600;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 500;
         font-size: 18px;
-        letter-spacing: 125%;
+        letter-spacing: 0%;
         color: #5E6282;
         text-decoration: none;
     }
 
     .discover p {
-        font-family: "Poppins";
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 20px;
-        letter-spacing: 125%;
+        line-height: 125%;
         color: #5E6282;
         letter-spacing: 1%;
+        margin-block-end: 10px;
     }
 
     .priloj {
-        display: flex;
-        gap: 100px;
+        margin-top: 15px;
+        display: block;
     }
 
     .priloj img {
         width: 41px;
         height: 41px;
+    }
+
+    .download img{
+        width: 107px;
+        height: 35px;
     }
