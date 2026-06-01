@@ -102,6 +102,62 @@
         height: 10px;
     }
 
+    /*sign-wind*/
+    .sign-wind {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+    .sign-wind-text h1 {
+        margin-top: 0;
+        color: #333;
+    }
+    .sign-wind-text p {
+        margin: 0.5rem 0;
+        color: #666;
+    }
+    .sign-wind-form form {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .sign-wind-form input {
+        width: calc(100% - 22px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+    .sign-wind-form button[type="submit"] {
+        background-color: #007bff; 
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    .sign-wind-form button#closeModalBtn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 
 
     /*traveller*/
@@ -155,11 +211,6 @@
 
     .desc {
         display: flex;
-        align-items: center;
-    }
-
-    .desc {
-        display: grid;
         gap: 40px;
     }
 

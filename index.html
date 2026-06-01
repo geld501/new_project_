@@ -1,78 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru">
+
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadoo - Travel & Enjoy</title>
+    <title>Docs</title>
 
     <link rel="stylesheet" href="styles\styles.css">
     <link rel="stylesheet" href="fonts\fonts.css">
 </head>
 
 <body>
+    <header>
+        <section class="section-head">
+            <div class="logo-and-buttons">
+                <img src="images\Logo.svg" alt="logo">
+                <nav class="nav">
+                    <ul class="ull">
+                        <li class="lit">
+                            <a class="celect" href="123"> Destinations </a>
+                        </li>
+                        <li class="lit">
+                            <a class="celect" href="123"> Hotels </a>
+                        </li>
+                        <li class="lit">
+                            <a class="celect" href="123"> Flights </a>
+                        </li>
+                        <li class="lit">
+                            <a class="celect" href="123"> Bookings </a>
+                        </li>
+                        <li class="lit">
+                            <a class="celect" href="123"> Login </a>
+                        </li>
+                    </ul>
+                    <button class="bordered-button-enter"> Sign up </button>
+                    <div class="language">
+                        <h3> EN </h3>
+                        <svg class="ggg" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="0,0 8,8 16,0" style="fill:none; stroke:black; stroke-width:1"/>
+                        </svg>
+                    </div>
+                </nav>
+            </div>
+            <img src="images\top decor.png" alt="top-decor" class="decor">
+        </section>
+    </header>
 
-<!---
-<div class="modal-overlay" id="modalOverlay" hidden>
-    <div class="modal-container">
-        <div class="modal-header">
-            <h3 class="modal-title">Sign up for Jadoo</h3>
-            <button class="modal-close" id="closeModalBtn">&times;</button>
+    <button id="openModalBtn" class="welcome__button">Открыть форму входа</button>
+
+    <div  class="sign-wind" hidden>
+        <div class="sign-wind-text">
+            <h1 id="modalTitle">Вход в систему</h1>
+            <p>Логин:</p>
+            <p>Email:</p>
+            <p>Телефон:</p>
         </div>
-        <div class="modal-body">
-            <p>Create an account to get exclusive travel deals!</p>
-            <form id="signupForm">
-                <input type="text" placeholder="Full name" required>
-                <input type="email" placeholder="Email address" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit" class="modal-submit">Create Account</button>
+        <div class="sign-wind-form">
+            <form action="#" method="post" novalidate>  
+                <input type="text" title="login" placeholder="Ваш логин" required autocomplete="username">
+                <input type="email" title="email" placeholder="example@mail.ru" required autocomplete="email">
+                <input type="tel" title="number" placeholder="+7 (999) 000-00-00" pattern="[+]7\s?[(]?\d{3}[)]?\s?\d{3}[-]\d{2}[-]\d{2}" required autocomplete="tel">
+                <button type="submit">Войти</button>
             </form>
-            <p class="modal-footer-text">Already have an account? <a href="#">Log in</a></p>
+            <button id="closeModalBtn" aria-label="Закрыть окно">×</button>
         </div>
     </div>
-</div>
--->
 
-<header>
-    <section class="section-head">
-        <div class="logo-and-buttons">
-            <img src="images/Logo.svg" alt="Jadoo logo">
-            <nav class="nav">
-                <ul class="ull">
-                    <li><a class="celect" href="#">Destinations</a></li>
-                    <li><a class="celect" href="#">Hotels</a></li>
-                    <li><a class="celect" href="#">Flights</a></li>
-                    <li><a class="celect" href="#">Bookings</a></li>
-                    <li><a class="celect" href="#" id="loginBtn">Login</a></li>
-                </ul>
-                <button class="bordered-button-enter" id="signupBtn">Sign up</button>
-                <div class="language">
-                    <h3>EN</h3>
-                    <svg class="ggg" xmlns="http://www.w3.org/2000/svg">
-                        <polyline points="0,0 8,8 16,0" style="fill:none; stroke:black; stroke-width:1"/>
-                    </svg>
-                </div>
-            </nav>
-        </div>
-        <!-- decor перенесён в CSS -->
-    </section>
-</header>
-
-<main>
     <section class="traveller-sect">
         <div class="traveller">
             <div class="div1">
-                <p class="text1_best_dist">ЛУЧШИЕ МЕСТА ДЛЯ ОТДЫХА ВО ВСЕМ МИРЕ</p>
-                <h1 class="text2_best_life">Travel, enjoy and live a new and full life</h1>
-                <p class="text3_bred">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                <p class="text1_best_dist"> ЛУЧШИЕ МЕСТА ДЛЯ ОТДЫХА ВО ВСЕМ МИРЕ</p>
+                <p class="text2_best_life"> Travel, enjoy and live a new and full life </p>
+                <p class="text3_bred"> Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the. </p>
                 <div class="desc">
-                    <button class="bordered-button-find-out-more">Find out more</button>
-                    <button class="play" aria-label="Play demo"></button>
-                    <p class="text3_bred">Play Demo</p>
+                    <button class="bordered-button-find-out-more"> Find out more </button>
+                    <button class="play"></button>
+                    <p class="text3_bred"> Play Demo </p>
                 </div>
             </div>
             <div class="div2">
-                <!-- decore и plane в CSS -->
+                <img src="images\Decore (1).png" alt="1" class="decore">
+                <img src="images\plane.png" alt="plane" class="plane1">
+                <img src="images\plane.png" alt="plane" class="plane2">
             </div>
         </div>
     </section>
@@ -80,32 +90,33 @@
     <section class="services">
         <div class="div3">
             <div class="services-head">
-                <p class="text4-CATEGORY">CATEGORY</p>
-                <h2 class="text5-we-offer-best">We Offer Best Services</h2>
+                <p class="text4-CATEGORY"> CATEGORY </p>
+                <p class="text5-we-offer-best">We Offer Best Services</p>
             </div>
         </div>
         <div class="div4">
+            <img src="images\Rectangle 157.png" alt="" class="rectangle">
             <div class="category">
-                <img src="images/antenna.png" alt="Weather icon">
-                <h3>Calculated Weather</h3>
-                <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+                <img src="images\antenna.png" alt="antenna">
+                <h1> Calculated Weather</h1>
+                <p> Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
             <div class="category-plane">
                 <div class="img-plane">
-                    <img src="images/plane_category.png" alt="Flight icon" class="pl">
+                    <img src="images\plane_category.png" alt="" class="pl">
                 </div>
-                <h3>Best Flights</h3>
-                <p>Engrossed listening. Park gate sell they west hard for the.</p>
+                <h1> Best Flights</h1>
+                <p> Engrossed listening. Park gate sell they west hard for the.</p>
             </div>
             <div class="category">
-                <img src="images/microphone.png" alt="Events icon">
-                <h3>Local Events</h3>
-                <p>Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                <img src="images\microphone.png" alt="antenna">
+                <h1> Local Events</h1>
+                <p> Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
             </div>
             <div class="category">
-                <img src="images/settings.png" alt="Customizing icon">
-                <h3>Customizing</h3>
-                <p>We deliver outsourced aviation services for military customers</p>
+                <img src="images\settings.png" alt="antenna">
+                <h1> Customizing</h1>
+                <p> We deliver outsourced aviation services for military customers</p>
             </div>
         </div>
     </section>
@@ -113,31 +124,31 @@
     <section class="top_sellingg">
         <div class="div3">
             <div class="services-head">
-                <p class="text4-CATEGORY">Top Selling</p>
-                <h2 class="text5-we-offer-best">Top Destinations</h2>
+                <p class="text4-CATEGORY"> Top Selling</p>
+                <p class="text5-we-offer-best">Top Destinations</p>
             </div>
         </div>
         <div class="cards">
             <div class="card1">
                 <div class="over">
                     <div class="first-text-card">
-                        <h3>Rome, Italy</h3>
-                        <p>$5,42k</p>
+                        <p>Rome, Italy</p>
+                        <p> $5,42k</p>
                     </div>
-                    <div class="second-text-card">
-                        <img src="images/navigation 1.svg" alt="navigation icon">
-                        <p>10 Days Trip</p>
+                    <div class="second-text-card">                
+                        <img src="images\navigation 1.svg" alt="nav">
+                        <p>10 Days Trip</p>                      
                     </div>
                 </div>
             </div>
             <div class="card2">
                 <div class="over">
                     <div class="first-text-card">
-                        <h3>London, UK</h3>
-                        <p>$4,2k</p>
+                        <p>London, UK</p>
+                        <p> $4,2k</p>
                     </div>
-                    <div class="second-text-card">
-                        <img src="images/navigation 1.svg" alt="navigation icon">
+                    <div class="second-text-card">                
+                        <img src="images\navigation 1.svg" alt="nav">
                         <p>12 Days Trip</p>
                     </div>
                 </div>
@@ -145,15 +156,16 @@
             <div class="card3">
                 <div class="over">
                     <div class="first-text-card">
-                        <h3>Full Europe</h3>
-                        <p>$15k</p>
+                        <p>Full Europe</p>
+                        <p> $15k</p>
                     </div>
-                    <div class="second-text-card">
-                        <img src="images/navigation 1.svg" alt="navigation icon">
-                        <p>28 Days Trip</p>
+                    <div class="second-text-card">                
+                        <img src="images\navigation 1.svg" alt="nav">
+                        <p>28 Days Trip</p>                    
                     </div>
                 </div>
             </div>
+            <img src="images\zigzag.png" alt="zigzag" class="zigzag">
         </div>
     </section>
 
@@ -195,75 +207,74 @@
             <div class="div6">
                 <div>
                     <p class="text9">Testimonials</p>
-                    <h2 class="text10">What people say about Us.</h2>
+                    <p class="text10">What people say about Us.</p>
                     <div class="points">
-                        <img src="images/Ellipse 26.png" alt="pagination dot">
-                        <img src="images/Ellipse 26.png" alt="pagination dot">
-                        <img src="images/Ellipse 26.png" alt="pagination dot">
+                        <img src="images\Ellipse 26.png" alt="1">
+                        <img src="images\Ellipse 26.png" alt="1">
+                        <img src="images\Ellipse 26.png" alt="1">
                     </div>
                 </div>
                 <div class="dialog-cards">
                     <div class="dialog-card1">
-                        <img src="images/dialog.png" alt="testimonial background">
+                        <img src="images\dialog.png" alt="">
                         <p class="text6">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p>
                         <p class="text7">Mike taylor</p>
                         <p class="text8">Lahore, Pakistan</p>
                     </div>
                     <div class="dialog-card2">
-                        <img src="images/dialog.png" alt="testimonial background">
+                        <img src="images\dialog.png" alt="">
                         <p class="text6">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p>
                         <p class="text7">Chris Thomas</p>
                         <p class="text8">CEO of Red Button</p>
                     </div>
                     <div class="strelki">
-                        <img src="images/Vector 2.svg" alt="previous arrow">
-                        <img src="images/Vector 3.svg" alt="next arrow">
+                        <img src="images\Vector 2.svg" alt="">
+                        <img src="images\Vector 3.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <img src="images/logos.png" alt="Partner logos">
+        <img src="images\logos.png" alt="">
     </section>
+
 
     <section class="subscribe-section">
+        <img src="images\subscribe section.png" alt="">
         <p>Subscribe to get information, latest news and other interesting offers about Jadoo</p>
         <input type="email" placeholder="Your email" class="inp">
-        <button class="custom-button" id="subscribeModalBtn">Subscribe</button>
+        <button class="custom-button">Subscribe</button>
     </section>
-</main>
 
-<footer>
-    <div class="podval-col">
-        <div style="display: flex; gap: 100px;">
-            <div>
-                <p class="logo-ty">Jadoo.</p>
-                <p class="book">Book your trip in minute, get full Control for much longer.</p>
+    <section>
+        <div class="podval-col">
+            <div style="display: flex; gap: 100px;">
+                <div>
+                    <p class="logo-ty">Jadoo.</p>
+                    <p class="book">Book your trip in minute, get full Control for much longer.</p>
+                </div>
+                <div>
+                    <p class="company">Company</p>
+                    <li>
+                        <a class="about" href="123">About</a>
+                    </li>
+                </div>
             </div>
-            <div>
-                <p class="company">Company</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a class="about" href="#">About</a></li>
-                </ul>
+            <div class="discover">
+                <div class="priloj">
+                    <img src="images\Social.svg" alt="1">
+                    <img src="images\Social (1).svg" alt="1">
+                    <img src="images\Social (2).svg" alt="1">
+                </div>
+                <p>Discover our app</p>
+                <div class="download">
+                    <img src="images\Google Play.png" alt="2">
+                    <img src="images\Play Store.png" alt="1">
+                </div>
             </div>
         </div>
-        <div class="discover">
-            <div class="priloj">
-                <a href="#"><img src="images/Social.svg" alt="Facebook"></a>
-                <a href="#"><img src="images/Social (1).svg" alt="Instagram"></a>
-                <a href="#"><img src="images/Social (2).svg" alt="Twitter"></a>
-            </div>
-            <p>Discover our app</p>
-            <div class="download">
-                <a href="#"><img src="images/Google Play.png" alt="Google Play"></a>
-                <a href="#"><img src="images/Play Store.png" alt="App Store"></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </section>
 
-<script>
-    
-</script>
-
+    <script src="js/script.js"></script>
 </body>
+
 </html>
