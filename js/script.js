@@ -1,6 +1,6 @@
 
 
-const openModalBtn = document.querySelector(".welcome__button");
+const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const modalWindow = document.querySelector('.sign-wind');
 
@@ -10,6 +10,13 @@ if (openModalBtn && modalWindow) {
     console.log('2')
     openModalBtn.addEventListener("click", function(event) {
         modalWindow.removeAttribute("hidden");
+    });
+}
+
+if (closeModalBtn && modalWindow) {
+    console.log('4')
+    closeModalBtn.addEventListener("click", function(event) {
+        modalWindow.setAttribute("hidden", true)
     });
 }
 
