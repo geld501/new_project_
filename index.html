@@ -14,29 +14,20 @@
 <body>
     <header>
         <section class="section-head">
+            <h1 hidden></h1>
             <div class="logo-and-buttons">
                 <img src="images\Logo.svg" alt="logo">
                 <nav class="nav">
                     <ul class="ull">
-                        <li class="lit">
-                            <a class="celect" href="123"> Destinations </a>
-                        </li>
-                        <li class="lit">
-                            <a class="celect" href="123"> Hotels </a>
-                        </li>
-                        <li class="lit">
-                            <a class="celect" href="123"> Flights </a>
-                        </li>
-                        <li class="lit">
-                            <a class="celect" href="123"> Bookings </a>
-                        </li>
-                        <li class="lit">
-                            <a class="celect" href="123"> Login </a>
-                        </li>
+                        <a class="celect" href="123"> Destinations </a>
+                        <a class="celect" href="123"> Hotels </a>
+                        <a class="celect" href="123"> Flights </a>
+                        <a class="celect" href="123"> Bookings </a>
+                        <a class="celect" href="123"> Login </a>
                     </ul>
                     <button id="openModalBtn" class="bordered-button-enter"> Sign up </button>
                     <div class="language">
-                        <h1> EN </h1>
+                        <h2> EN </h2>
                         <svg class="ggg" xmlns="http://www.w3.org/2000/svg">
                             <polyline points="0,0 8,8 16,0" style="fill:none; stroke:black; stroke-width:1"/>
                         </svg>
@@ -49,16 +40,14 @@
 
     <div class="sign-wind" hidden>
         <div class="sign-wind-text">
-            <h1 id="modalTitle">Вход в систему</h1>
-            <p>Логин:</p>
-            <p>Email:</p>
-            <p>Телефон:</p>
+            <h2 id="modalTitle">Вход в систему</h2>
         </div>
         <div class="sign-wind-form">
-            <form action="#" method="post" novalidate>  
+            <form action="#" method="post" novalidate>
+                <p>Логин:</p>
                 <input type="text" title="login" placeholder="Ваш логин" required autocomplete="username">
-                <input type="email" title="email" placeholder="example@mail.ru" required autocomplete="email">
-                <input type="tel" title="number" placeholder="+7 (999) 000-00-00" pattern="[+]7\s?[(]?\d{3}[)]?\s?\d{3}[-]\d{2}[-]\d{2}" required autocomplete="tel">
+                <p>Пароль:</p>
+                <input type="password" title="password" placeholder="password" required autocomplete="new-password">
                 <button type="submit">Войти</button>
             </form>
             <button id="closeModalBtn" aria-label="Закрыть окно">×</button>
@@ -68,7 +57,7 @@
     <section class="traveller-sect">
         <div class="traveller">
             <div class="div1">
-                <h1 class="text1_best_dist"> ЛУЧШИЕ МЕСТА ДЛЯ ОТДЫХА ВО ВСЕМ МИРЕ</h1>
+                <h2 class="text1_best_dist"> ЛУЧШИЕ МЕСТА ДЛЯ ОТДЫХА ВО ВСЕМ МИРЕ</h2>
                 <p class="text2_best_life"> Travel, enjoy and live a new and full life </p>
                 <p class="text3_bred"> Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the. </p>
                 <div class="desc">
@@ -87,7 +76,7 @@
     <section class="services">
         <div class="div3">
             <div class="services-head">
-                <h1 class="text4-CATEGORY"> CATEGORY </h1>
+                <h2 class="text4-CATEGORY"> CATEGORY </h2>
                 <p class="text5-we-offer-best">We Offer Best Services</p>
             </div>
         </div>
@@ -95,24 +84,25 @@
             <img src="images\Rectangle 157.png" alt="" class="rectangle">
             <div class="category">
                 <img src="images\antenna.png" alt="antenna">
-                <h1> Calculated Weather</h1>
+                <h2> Calculated Weather</h2>
                 <p> Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
             <div class="category-plane">
                 <div class="img-plane">
                     <img src="images\plane_category.png" alt="" class="pl">
                 </div>
-                <h1> Best Flights</h1>
+                <h2> Best Flights</h2>
                 <p> Engrossed listening. Park gate sell they west hard for the.</p>
+
             </div>
             <div class="category">
                 <img src="images\microphone.png" alt="antenna">
-                <h1> Local Events</h1>
+                <h2> Local Events</h2>
                 <p> Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
             </div>
             <div class="category">
                 <img src="images\settings.png" alt="antenna">
-                <h1> Customizing</h1>
+                <h2> Customizing</h2>
                 <p> We deliver outsourced aviation services for military customers</p>
             </div>
         </div>
@@ -121,12 +111,13 @@
     <section class="top_sellingg">
         <div class="div3">
             <div class="services-head">
-                <h1 class="text4-CATEGORY"> Top Selling</h1>
+                <h2 class="text4-CATEGORY"> Top Selling</h2>
                 <p class="text5-we-offer-best">Top Destinations</p>
             </div>
         </div>
         <div class="cards">
-            <div class="card1">
+            <div class="card"> 
+                <img src="images\Rome_card.png" alt="1">
                 <div class="over">
                     <div class="first-text-card">
                         <p>Rome, Italy</p>
@@ -138,7 +129,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card2">
+            <div class="card">
+                <img src="images\London_card.png" alt="2">
                 <div class="over">
                     <div class="first-text-card">
                         <p>London, UK</p>
@@ -150,7 +142,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card3">
+            <div class="card">
+                <img src="images\Last_card.png" alt="2">
                 <div class="over">
                     <div class="first-text-card">
                         <p>Full Europe</p>
@@ -168,26 +161,26 @@
     <section class="section-easy-a">
         <div class="easy_and_fast">
             <div class="div5">
-                <h1 class="text4-CATEGORY"> Easy and Fast</h1>
+                <h2 class="text4-CATEGORY"> Easy and Fast</h2>
                 <p class="text5-we-offer-best">Book your next trip in 3 easy steps</p>
                 <div class="chose">
                     <img src="images\selection.png" alt="1">
                     <div>
-                        <h1>Choose Destination</h1>
+                        <h2>Choose Destination</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                     </div>
                 </div>
                 <div class="chose">
                     <img src="images\swim.png" alt="2">
                     <div>
-                        <h1>Make Payment</h1>
+                        <h2>Make Payment</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.  </p>
                     </div>
                 </div>
                 <div class="chose">
                     <img src="images\taxi.png" alt="1">
                     <div>
-                        <h1>Reach Airport on Selected Date</h1>
+                        <h2>Reach Airport on Selected Date</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                     </div>
                 </div>
@@ -202,7 +195,7 @@
         <div class="testimonials">
             <div class="div6">
                 <div>
-                    <h1 class="text9">Testimonials</h1>
+                    <h2 class="text9">Testimonials</h2>
                     <p class="text10">What people say about Us.</p>
                     <div class="points">
                         <img src="images\Ellipse 26.png" alt="1">
@@ -212,18 +205,16 @@
                 </div>
                 <div class="dialog-cards">
                     <div class="dialog-card1">
-                        <div>
-                            <p class="text6">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p>
-                            <p class="text7">Mike taylor</p>
-                            <p class="text8">Lahore, Pakistan</p>
-                        </div>
+                        <img class="img-face" src="images\Image.jpg" alt="1">
+                        <p class="text6">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p>
+                        <p class="text7">Mike taylor</p>
+                        <p class="text8">Lahore, Pakistan</p>
                     </div>
                     <div class="dialog-card2">
-                        <div>
-                            <p class="text6">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p>
-                            <p class="text7">Chris Thomas</p>
-                            <p class="text8">CEO of Red Button</p>
-                        </div>
+                        <img class="img-face" src="images\Image.jpg" alt="2">
+                        <p class="text6">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p>
+                        <p class="text7">Chris Thomas</p>
+                        <p class="text8">CEO of Red Button</p>
                     </div>
                     <div class="strelki">
                         <img src="images\Vector 2.svg" alt="">
@@ -236,37 +227,40 @@
 
 
     <section class="subscribe-section">
-        <div>
-            <h1>Subscribe to get information, latest news and other interesting offers about Jadoo</h1>
-            <input type="email" placeholder="Your email" class="inp">
-            <button class="custom-button">Subscribe</button>
+        <div class="sub">
+            <h2>Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
+            <div>
+                <form action="#">
+                    <img class="img-mail" src="images\map_icon.svg" alt="1">
+                    <input type="email" placeholder="Your email" class="inp">
+                </form>
+                <button class="custom-button">Subscribe</button>
+            </div>
         </div>
     </section>
 
     <section>
         <div class="podval-col">
-            <div style="display: flex; gap: 100px;">
+            <div style="display: flex; gap: 30px;">
                 <div>
-                    <h1 class="logo-ty">Jadoo.</h1>
+                    <h2 class="logo-ty">Jadoo.</h2>
                     <p class="book">Book your trip in minute, get full Control for much longer.</p>
                 </div>
                 <div>
                     <p class="company">Company</p>
-                    <li>
-                        <a class="about" href="123">About</a>
-                    </li>
+                    <a class="about" href="123">About</a>
                 </div>
             </div>
             <div class="discover">
                 <div class="priloj">
-                    <img src="images\Social.svg" alt="1">
-                    <img src="images\Social (1).svg" alt="1">
-                    <img src="images\Social (2).svg" alt="1">
+                    <button class="soc1"></button>
+                    <button class="soc2"></button>
+                    <button class="soc3"></button>
                 </div>
                 <p>Discover our app</p>
                 <div class="download">
-                    <img src="images\Google Play.png" alt="2">
-                    <img src="images\Play Store.png" alt="1">
+                    <button class="google"></button>
+                    <button class="aple"></button>
                 </div>
             </div>
         </div>

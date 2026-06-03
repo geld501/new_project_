@@ -76,6 +76,8 @@
         border: 2px solid #333;
         padding: 10px 20px;
         border-radius: 5px;
+        
+        transition: background-image 0.5s;
     }
 
     .bordered-button-enter:hover {
@@ -93,7 +95,7 @@
         align-items: center;
     }
 
-    .language h1 {
+    .language h2 {
         font-family: "Google-Sans", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 17px;
@@ -120,15 +122,18 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         max-width: 400px;
         width: 100%;
-        text-align: center;
     }
-    .sign-wind-text h1 {
-        margin-top: 0;
-        color: #333;
+    .sign-wind-text h2 {
+        font-family: "Google-Sans", Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #212832;
     }
     .sign-wind-text p {
-        margin: 0.5rem 0;
-        color: #666;
+        font-family: "Google-Sans", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        color: #212832;
     }
     .sign-wind-form form {
         display: grid;
@@ -373,7 +378,7 @@
         align-items: center;
     }
 
-    .div4 h1{
+    .div4 h2{
         font-family: "Google-Sans", Arial, Helvetica, sans-serif;
         font-size: 20px;
         align-self: center;
@@ -524,31 +529,8 @@
         height: 20px;
     }
 
-    .card1 {
+    .card {
         width: 315px;
-        background-image: url(../images/Rome_card.png);
-        position: relative;
-
-        border-radius: 24px;
-        
-        transition: background 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
-    }
-
-    .card2 {
-        width: 315px;
-        background-image: url(../images/London_card.png);
-        position: relative;
-
-        border-radius: 24px;
-        
-        transition: background 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
-    }
-
-    .card3 {
-        width: 315px;
-        background-image: url(../images/Last_card.png);
         position: relative;
 
         border-radius: 24px;
@@ -563,8 +545,6 @@
         top: 140px;
         left: 1010px;
     }
-
-
 
     /*EASY_A*/
     .section-easy-a {
@@ -596,7 +576,7 @@
         margin-bottom: 20px;
     }
 
-    .chose h1 {
+    .chose h2 {
         font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 16px;
@@ -679,43 +659,25 @@
     }
 
     .dialog-card1 {
-        background-image: url(../images/Image.jpg);
-        background-repeat: no-repeat;
-        background-position: 0px 0px;
-
         position: absolute;
-        width: 500pt;
-        height: 279pt;
         top: 80px;
         left: 50px;
         right: 0;
         bottom: 0px;
-    }
 
-    .dialog-card1 div {
+        
         background-color: white;
-        transition: background 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
-                border-radius: 20px;
+        border-radius: 20px;
         
         width: 650px;
         height: 300px;
         margin-left: 50px;
+
+        z-index: -1;
     }
 
     .dialog-card2 {
-        background-image: url(../images/Image.jpg);
-        background-repeat: no-repeat;
-        background-position: 0px 0px;
-
-        position: absolute;
-        width: 400pt;
-        height: 279pt;
-        left: 0;
-        right: 0;
-    }
-
-    .dialog-card2 div {
         background-color: white;
         transition: background 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
@@ -723,13 +685,18 @@
         
         width: 650px;
         height: 300px;
-        margin-left: 70px;
+    }
+
+    .img-face {
+        position: absolute;
+        left: -25px;
+        top: -15px;
     }
 
     .text6{
         position: absolute;
         top: 50px;
-        left: 115px;
+        left: 50px;
         right: 0;
         bottom: 0px;
         display: flex;
@@ -745,7 +712,7 @@
     .text7{
         position: absolute;
         top: 180px;
-        left: 115px;
+        left: 50px;
         right: 0;
         bottom: 0px;
         display: flex;
@@ -760,7 +727,7 @@
     .text8{
         position: absolute;
         top: 210px;
-        left: 115px;
+        left: 50px;
         right: 0;
         bottom: 0px;
         display: flex;
@@ -792,13 +759,37 @@
         background-image: url(../images/subscribe-section.png);
     }
 
-    .subscribe-section h1{
-        position: absolute;
-        top: 60px;
-        left: 150px;
-        width: 859px;
-        height: 108px;
+    .subscribe-section form{
+        width: 350px;
 
+        border: none;
+        border-radius: 10px;
+        height: 60px;
+        padding: 5px;
+
+        background-color: white;
+    }
+
+    .sub{
+        display: grid;
+        gap: 70px;
+
+        width: 800px;
+        justify-self: center;
+        margin-top: 50px;
+    }
+
+    .sub div{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .img-mail {
+        margin-top: 10px;
+    }
+
+    .subscribe-section h2{
         font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 33px;
@@ -807,38 +798,22 @@
         color: #5E6282;
     }
 
-    .subscribe-section img{
-        position: absolute;
-        top: 0px;
-        left: -100px;
-        width: 0px;
-        height: 0px;
-        width: 1400px;
-        height: 500px;
-    }
-
     .inp {
-        position: absolute;
-        top: 275px;
-        left: 330px;
-        width: 300px;
-
         font-family: "Poppins", Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 14px;
         color: #39425D;
 
+        width: 300px;
+        height: 30px;
+
         border: none;
         border-radius: 10px;
-        height: 60px;
         padding: 5px;
     }
 
     /*кнопка*/
     .custom-button {
-        position: absolute;
-        top: 275px;
-        left: 700px;
         width: 180px;
         height: 68px;
         padding: 0;
@@ -932,9 +907,41 @@
         display: block;
     }
 
-    .priloj img {
-        width: 41px;
-        height: 41px;
+    .priloj button {
+        width: 65px;
+        height: 65px;
+        border: none;
+        background-color: #33333300;
+    }
+
+    .discover button:active {
+        transform: scale(0.8);
+    }
+
+    .soc1 {
+        background-image: url(../images/Social.svg);
+    }
+
+    .soc2 {
+        background-image: url(../images/Social1.svg);
+    }
+
+    .soc3 {
+        background-image: url(../images/Social2.svg);
+    }
+
+    .google {
+        width: 105px;
+        height: 35px;
+        border: none;
+        background-image: url(../images/GooglePlay.png);
+    }
+
+    .aple {
+        width: 100px;
+        height: 35px;
+        border: none;
+        background-image: url(../images/PlayStore.png);
     }
 
     .download img{
@@ -944,28 +951,29 @@
 
     
 
-@media screen and (max-width: 1000px) and (max-height: 800px),
-       screen and (max-width: 1000px) {
+@media (max-width: 1200px) and (min-width: 700px){
     
     body {
         padding: 20px;
     }
 
     .ggg {
-        width: 50px;
+        width: 20px;
     }
 
     .section-head {
         justify-self: center;
         margin-top: 300px;
-        width: 1099px;
+        width: 800px;
         padding-bottom: 200px;
     }
 
     .logo-and-buttons {
         gap: 40px;
+        width: 600px;
         flex-wrap: wrap;
         justify-content: center;
+        justify-self: center;
     }
 
     .nav {
@@ -1004,6 +1012,8 @@
     .traveller-sect {
         width: 100%;
         height: auto;
+
+        margin-top: 50px;
     }
 
     .traveller {
@@ -1014,7 +1024,7 @@
 
     .div1 {
         background-image: none;
-        width: 100%;
+        width: 500px;
         text-align: center;
     }
 
@@ -1157,7 +1167,7 @@
     }
 
     .section-easy-a {
-        width: 800px;
+        width: 600px;
     }
 
     .easy_and_fast {
@@ -1182,7 +1192,7 @@
         height: 40px;
     }
 
-    .chose h1 {
+    .chose h2 {
         font-size: 14px;
     }
 
@@ -1233,57 +1243,44 @@
         justify-self: center;
     }
 
-    .dialog-cards {
-        width: 500px;
-        position: relative;
-    }
-
     .dialog-card1 {
-        background-image: url(../images/Image.jpg);
-        background-repeat: no-repeat;
-        background-position: 0px 0px;
-
         position: absolute;
-        width: 300pt;
-        height: 279pt;
         top: 80px;
         left: 50px;
         right: 0;
         bottom: 0px;
-    }
 
-    .dialog-card1 div {
-        background-color: white;
-        transition: background 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
-                border-radius: 20px;
         
-        width: 450px;
-        height: 250px;
+        background-color: white;
+        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
+        border-radius: 20px;
+        
+        width: 350px;
+        height: 300px;
         margin-left: 50px;
+
+        z-index: -1;
     }
 
     .dialog-card2 {
-        background-image: url(../images/Image.jpg);
-        background-repeat: no-repeat;
-        background-position: 0px 0px;
-
-        position: absolute;
-        width: 300pt;
-        height: 279pt;
-        left: 0;
-        right: 0;
-    }
-
-    .dialog-card2 div {
         background-color: white;
         transition: background 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
         border-radius: 20px;
         
-        width: 450px;
-        height: 250px;
-        margin-left: 70px;
+        width: 350px;
+        height: 300px;
+    }
+
+    .img-face {
+        position: absolute;
+        left: -25px;
+        top: -15px;
+    }
+
+    .dialog-cards {
+        width: 500px;
+        position: relative;
     }
 
     .text6, .text7, .text8 {
@@ -1329,12 +1326,12 @@
         margin-top: 50px;
     }
 
-    .subscribe-section h1 {
+    .subscribe-section h2 {
         justify-self: center;
         position: relative;
         top: 0;
         left: 0;
-        width: 90%;
+        width: 500px;
         margin: -30px auto 20px;
         font-size: 20px;
         line-height: 1.3;
@@ -1346,12 +1343,20 @@
         flex-wrap: wrap;
     }
 
+    .sub {
+        width: 600PX;
+    }
+
+    .subscribe-section form{
+        display: flex;
+    }
+
     .inp {
         justify-self: center;
         position: relative;
         top: 0;
         left: 0;
-        width: 80%;
+        width: 400px;
         max-width: 280px;
         height: 45px;
         margin: 10px auto;
@@ -1363,7 +1368,7 @@
     .custom-button {
         justify-self: center;
         position: relative;
-        top: 0;
+        top: 10px;
         left: 0;
         width: 140px;
         height: 50px;
