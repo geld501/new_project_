@@ -1,11 +1,13 @@
 @font-face {
-    font-family: "Google-Sans-Bold";
+    font-family: "Google-Sans";
     src: url("../fonts/GoogleSans-Bold.ttf") format("truetype");
+    font-weight: 600;
 }
 
 @font-face {
-    font-family: "Google-Sans-Medium";
+    font-family: "Google-Sans";
     src: url("../fonts/GoogleSans-Medium.ttf") format("truetype");
+    font-weight: 500;
 }
 
 @font-face {
