@@ -658,6 +658,15 @@
         height: 356pt;
     }
 
+    .strel {
+        border: none;
+        background-color: white;
+    }
+
+    .strel:active {
+        transform: scale(0.8);
+    }
+
     .dialog-card1 {
         position: absolute;
         top: 80px;
@@ -748,10 +757,51 @@
 
     }
 
+    .sponsors {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-wrap: wrap;
+
+        
+        justify-content: center;
+    }
+
+    .sponsors img {
+        justify-self: center;
+    }
+
+    .sp1 {
+        width: 241px;
+        height: 162px;
+
+        align-content: center;
+        text-align: center;
+
+        border: none;
+        background-color: white;
+    }
+
+    .sp2 {
+        width: 241px;
+        height: 162px;
+
+        align-items: center;
+        text-align: center;
+
+
+        background-color: white;
+        box-shadow: 0px 50px 50px 0px rgba(128, 128, 128, 0.138);
+        border-radius: 20px;
+        
+        border: none;
+    }
+
 
 
     /*subscribe-section*/
     .subscribe-section {
+        margin-top: 100px;
         position: relative;
         width: 1400px;
         height: 487px;
@@ -767,7 +817,11 @@
         height: 60px;
         padding: 5px;
 
+        display: flex;
+
         background-color: white;
+
+        align-items: center;
     }
 
     .sub{
@@ -786,7 +840,11 @@
     }
 
     .img-mail {
-        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .subscribe-section h2{
@@ -800,7 +858,7 @@
 
     .inp {
         font-family: "Poppins", Arial, Helvetica, sans-serif;
-        font-weight: 500;
+        font-weight: 480;
         font-size: 14px;
         color: #39425D;
 
@@ -810,6 +868,8 @@
         border: none;
         border-radius: 10px;
         padding: 5px;
+
+        margin-right: 10px;
     }
 
     /*кнопка*/
